@@ -78,7 +78,7 @@ export function BeforeAfterSlider({ before, after, className }: BeforeAfterSlide
             <img 
                 src={after} 
                 alt="Después" 
-                className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                className="absolute inset-0 w-full h-full object-contain pointer-events-none"
                 draggable={false}
             />
 
@@ -90,7 +90,7 @@ export function BeforeAfterSlider({ before, after, className }: BeforeAfterSlide
                 <img 
                     src={before} 
                     alt="Antes" 
-                    className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                    className="absolute inset-0 w-full h-full object-contain pointer-events-none"
                     draggable={false}
                 />
             </div>
@@ -110,7 +110,7 @@ export function BeforeAfterSlider({ before, after, className }: BeforeAfterSlide
                 className="absolute inset-y-0 w-[2px] bg-white/50 backdrop-blur-sm shadow-[0_0_20px_rgba(0,0,0,0.5)] z-20 pointer-events-none"
                 style={{ left: `${sliderPos}%` }}
             >
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-14 w-14 bg-white rounded-full shadow-[0_0_40px_rgba(0,0,0,0.3)] flex items-center justify-center border-4 border-zinc-900/50 backdrop-blur-md transition-transform duration-300 group-hover:scale-110">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-14 w-14 bg-white rounded-full shadow-[0_0_40px_rgba(0,0,0,0.3)] flex items-center justify-center border-4 border-zinc-900/50 backdrop-blur-md transition-transform duration-300">
                     <MoveHorizontal className="h-6 w-6 text-zinc-900" />
                 </div>
             </div>

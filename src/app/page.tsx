@@ -7,7 +7,6 @@ import {
   Zap, 
   Clock, 
   ArrowRight, 
-  ShieldCheck, 
   Users, 
   Star,
   Activity
@@ -43,7 +42,7 @@ export default function Home() {
             transition={{ duration: 1, ease: "easeOut" }}
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 mb-8 backdrop-blur-xl">
-              <ShieldCheck className="w-4 h-4 text-blue-400" />
+              <img src="/images/himplant.png" alt="Himplant Logo" className="w-4 h-4 object-contain" />
               <span className="text-[10px] font-black tracking-[0.3em] text-blue-400 uppercase">Tecnología Autorizada por la FDA</span>
             </div>
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-black mb-8 tracking-tighter leading-none">
@@ -52,12 +51,6 @@ export default function Home() {
             <p className="text-xl md:text-2xl text-zinc-400 max-w-3xl mx-auto mb-12 font-medium leading-relaxed">
               El procedimiento cosmético e innovador para el agrandamiento del pene diseñado para mejorar tu confianza y calidad de vida.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <button className="px-10 py-5 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-bold transition-all duration-300 shadow-[0_0_40px_rgba(37,99,235,0.4)] hover:scale-105 flex items-center gap-3 group">
-                INICIAR CONSULTA
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
           </motion.div>
         </div>
         
@@ -104,7 +97,7 @@ export default function Home() {
               </div>
               <div className="relative">
                 <div className="aspect-square bg-zinc-100 rounded-3xl overflow-hidden border border-zinc-200 shadow-inner flex items-center justify-center p-12">
-                   <ShieldCheck className="w-40 h-40 text-blue-600/20" />
+                   <img src="/images/himplant.png" alt="Himplant" className="w-full h-full object-contain" />
                 </div>
               </div>
             </div>
