@@ -24,6 +24,44 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#000814] text-white selection:bg-blue-500/30">
 
+      {/* Watermark */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: 'fixed',
+          inset: 0,
+          zIndex: 9999,
+          pointerEvents: 'none',
+          overflow: 'hidden',
+          display: 'flex',
+          flexWrap: 'wrap',
+          alignContent: 'flex-start',
+          gap: '60px 40px',
+          padding: '40px',
+          transform: 'rotate(-30deg) scale(1.5)',
+          transformOrigin: 'center center',
+          opacity: 0.07,
+        }}
+      >
+        {Array.from({ length: 40 }).map((_, i) => (
+          <span
+            key={i}
+            style={{
+              display: 'inline-block',
+              color: '#ffffff',
+              fontSize: '13px',
+              fontWeight: 700,
+              letterSpacing: '0.12em',
+              whiteSpace: 'nowrap',
+              userSelect: 'none',
+              fontFamily: 'system-ui, sans-serif',
+            }}
+          >
+            Urólogo Sergio Acosta
+          </span>
+        ))}
+      </div>
+
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
