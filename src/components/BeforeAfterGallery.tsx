@@ -4,7 +4,6 @@ import React from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
 import { BeforeAfterSlider } from './BeforeAfterSlider';
-import { cn } from '../lib/utils';
 
 const cases = [
     { 
@@ -16,7 +15,7 @@ const cases = [
     },
     { 
         id: '2', 
-        title: 'Longitud en Flácido',
+        title: 'Mayor longitud',
         description: 'Resultados permanentes que mejoran la estética y la confianza.',
         before: '/images/himplant-2a.png',
         after: '/images/himplant-2b.png' 

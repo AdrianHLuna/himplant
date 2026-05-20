@@ -2,12 +2,12 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  CheckCircle2, 
-  Zap, 
-  Clock, 
-  ArrowRight, 
-  Users, 
+import {
+  CheckCircle2,
+  Zap,
+  Clock,
+  ArrowRight,
+  Users,
   Star,
   Activity
 } from 'lucide-react';
@@ -23,13 +23,13 @@ const fadeInUp = {
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#000814] text-white selection:bg-blue-500/30">
-      
+
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/himplant-clinic.png" 
-            alt="Clinical Interior" 
+          <img
+            src="/images/himplant-clinic.png"
+            alt="Clinical Interior"
             className="w-full h-full object-cover opacity-40"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#000814]/80 via-[#000814]/60 to-[#000814]" />
@@ -53,7 +53,7 @@ export default function Home() {
             </p>
           </motion.div>
         </div>
-        
+
         {/* Floating elements */}
         <div className="absolute bottom-12 left-12 hidden lg:flex items-center gap-6 text-[10px] font-black tracking-[0.2em] text-zinc-600 uppercase">
           <div className="flex items-center gap-2">
@@ -71,9 +71,13 @@ export default function Home() {
       {/* Info Sections - Two Main Cards as in the Image */}
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto space-y-24">
-          
+
+          {/* Gallery Section */}
+          <BeforeAfterGallery />
+
+
           {/* Card 1: Qué es? */}
-          <motion.div 
+          <motion.div
             {...fadeInUp}
             className="group relative bg-white rounded-[40px] p-12 lg:p-20 overflow-hidden shadow-2xl"
           >
@@ -85,26 +89,26 @@ export default function Home() {
                 </h2>
                 <div className="space-y-6 text-lg text-zinc-600 leading-relaxed">
                   <p>
-                    Himplant es un procedimiento cosmético e innovador para el agrandamiento del pene, 
+                    Himplant es un procedimiento cosmético e innovador para el agrandamiento del pene,
                     este procedimiento se encuentra <strong className="text-[#001026]">autorizado por la FDA.</strong>
                   </p>
                   <p>
-                    Se trata de un implante de silicona médica suave que envuelve el pene y está diseñado 
-                    para mejorar tanto el <strong className="text-[#001026]">grosor como la longitud</strong> en estado flácido, 
+                    Se trata de un implante de silicona médica suave que envuelve el pene y está diseñado
+                    para mejorar tanto el <strong className="text-[#001026]">grosor como la longitud, </strong>
                     brindando un aspecto natural y confortable.
                   </p>
                 </div>
               </div>
               <div className="relative">
                 <div className="aspect-square bg-zinc-100 rounded-3xl overflow-hidden border border-zinc-200 shadow-inner flex items-center justify-center p-12">
-                   <img src="/images/himplant.png" alt="Himplant" className="w-full h-full object-contain" />
+                  <img src="/images/himplant.png" alt="Himplant" className="w-full h-full object-contain" />
                 </div>
               </div>
             </div>
           </motion.div>
 
           {/* Card 2: En qué consiste? */}
-          <motion.div 
+          <motion.div
             {...fadeInUp}
             className="group relative bg-white rounded-[40px] p-12 lg:p-20 overflow-hidden shadow-2xl"
           >
@@ -115,13 +119,13 @@ export default function Home() {
               </h2>
               <div className="space-y-8 text-lg text-zinc-600 leading-relaxed">
                 <p>
-                  El procedimiento implica una incisión en la parte superior del escroto 
-                  (aproximadamente 2.5 a 5 cm por debajo de la unión escroto-peneana), 
+                  El procedimiento implica una incisión en la parte superior del escroto
+                  (aproximadamente 2.5 a 5 cm por debajo de la unión escroto-peneana),
                   lo cual ayuda a <strong className="text-[#001026]">minimizar cicatrices visibles.</strong>
                 </p>
                 <div className="bg-blue-600/5 p-8 rounded-3xl border border-blue-600/10 text-[#001026] font-medium">
-                  El implante se inserta por debajo de la piel del pene, envolviéndolo en 270° para 
-                  garantizar que no interfiera con la uretra. Se fija con suturas justo detrás del 
+                  El implante se inserta por debajo de la piel del pene, envolviéndolo en 270° para
+                  garantizar que no interfiera con la uretra. Se fija con suturas justo detrás del
                   glande y contiene una malla quirúrgica integrada para dar estabilidad.
                 </div>
               </div>
@@ -131,7 +135,7 @@ export default function Home() {
           {/* Two Column Section: Beneficios & Recuperación */}
           <div className="grid md:grid-cols-2 gap-12">
             {/* Beneficios */}
-            <motion.div 
+            <motion.div
               {...fadeInUp}
               className="bg-white rounded-[40px] p-12 shadow-2xl"
             >
@@ -143,8 +147,8 @@ export default function Home() {
               </div>
               <ul className="space-y-6">
                 {[
-                  "Aumento de circunferencia de 2.5 a 5 cm.",
-                  "Mejora de longitud en estado flácido.",
+                  "Aumento promedio de una circunferencia de una pulgada",
+                  "Aumento promedio de longitud de dos pulgadas",
                   "Resultados duraderos y permanentes.",
                   "Sensibilidad y función intactas.",
                   "Aspecto y tacto auténtico."
@@ -158,7 +162,7 @@ export default function Home() {
             </motion.div>
 
             {/* Recuperación */}
-            <motion.div 
+            <motion.div
               {...fadeInUp}
               transition={{ delay: 0.2 }}
               className="bg-white rounded-[40px] p-12 shadow-2xl"
@@ -189,8 +193,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <BeforeAfterGallery />
 
       {/* Footer */}
       <footer className="py-20 bg-[#000814] border-t border-white/5">
@@ -199,7 +201,7 @@ export default function Home() {
             HIMPLANT<span className="text-blue-600">.</span>
           </div>
           <p className="text-zinc-500 text-sm max-w-md mx-auto">
-            © 2026 Himplant Medical. Todos los derechos reservados. 
+            © 2026 Himplant Medical. Todos los derechos reservados.
             Consulte a su médico antes de realizar cualquier procedimiento quirúrgico.
           </p>
         </div>
