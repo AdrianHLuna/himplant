@@ -113,6 +113,44 @@ export default function Home() {
           {/* Gallery Section */}
           <BeforeAfterGallery />
 
+          {/* WhatsApp CTA Button */}
+          <motion.div
+            {...fadeInUp}
+            className="flex justify-center"
+          >
+            <a
+              href="https://wa.me/529613189186?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20sobre%20Himplant."
+              target="_blank"
+              rel="noopener noreferrer"
+              id="whatsapp-cta-btn"
+              className="group relative inline-flex items-center gap-4 px-10 py-5 rounded-full overflow-hidden text-white font-black text-lg tracking-wide shadow-2xl transition-transform duration-300 hover:scale-105"
+              style={{
+                background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
+                boxShadow: '0 0 40px rgba(37, 211, 102, 0.35)',
+              }}
+            >
+              {/* Shimmer effect */}
+              <span
+                aria-hidden="true"
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                style={{
+                  background: 'linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.18) 50%, transparent 70%)',
+                }}
+              />
+              {/* WhatsApp icon */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                fill="currentColor"
+                className="w-7 h-7 flex-shrink-0"
+                aria-hidden="true"
+              >
+                <path d="M16 2C8.268 2 2 8.268 2 16c0 2.47.67 4.784 1.836 6.77L2 30l7.43-1.814A13.93 13.93 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Zm0 25.4a11.32 11.32 0 0 1-5.77-1.578l-.413-.246-4.41 1.077 1.108-4.294-.27-.44A11.36 11.36 0 0 1 4.6 16C4.6 9.699 9.699 4.6 16 4.6S27.4 9.699 27.4 16 22.301 27.4 16 27.4Zm6.22-8.47c-.34-.17-2.012-.994-2.325-1.108-.312-.113-.54-.17-.767.17-.228.34-.882 1.108-1.08 1.336-.2.228-.397.255-.737.085-.34-.17-1.434-.528-2.732-1.686-1.01-.9-1.692-2.012-1.89-2.352-.198-.34-.022-.524.148-.694.154-.152.34-.397.51-.595.17-.2.227-.34.34-.567.114-.228.057-.426-.028-.595-.085-.17-.767-1.847-1.051-2.53-.277-.665-.558-.575-.767-.585l-.653-.011c-.228 0-.595.085-.907.425s-1.193 1.165-1.193 2.84 1.222 3.296 1.392 3.524c.17.228 2.405 3.673 5.828 5.15.815.352 1.45.562 1.947.72.818.26 1.563.223 2.151.135.656-.097 2.012-.823 2.296-1.618.284-.795.284-1.477.2-1.618-.085-.14-.313-.228-.654-.397Z" />
+              </svg>
+              <span>Agenda tu Consulta</span>
+              <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+            </a>
+          </motion.div>
 
           {/* Card 1: Qué es? */}
           <motion.div
