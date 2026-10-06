@@ -55,6 +55,13 @@ const cases = [
         before: '/images/himplant-7a.jpg', 
         after: '/images/himplant-7b.jpg' 
     },
+    { 
+        id: '8', 
+        title: 'Caso Clínico en Quirófano III',
+        description: 'Evaluación quirúrgica directa del incremento de grosor y simetría anatómica.',
+        before: '/images/himplant-8a.jpeg', 
+        after: '/images/himplant-8b.jpeg' 
+    },
 ];
 
 export function BeforeAfterGallery() {
