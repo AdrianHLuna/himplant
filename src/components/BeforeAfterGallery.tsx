@@ -62,6 +62,13 @@ const cases = [
         before: '/images/himplant-8a.jpeg', 
         after: '/images/himplant-8b.jpeg' 
     },
+    { 
+        id: '9', 
+        title: 'Caso Clínico en Quirófano IV',
+        description: 'Resultado quirúrgico intraoperatorio que evidencia el notable aumento en grosor y proyección anatómica.',
+        before: '/images/himplant-9a.jpg', 
+        after: '/images/himplant-9b.jpg' 
+    },
 ];
 
 export function BeforeAfterGallery() {
