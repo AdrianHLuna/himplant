@@ -69,6 +69,13 @@ const cases = [
         before: '/images/himplant-9a.jpg', 
         after: '/images/himplant-9b.jpg' 
     },
+    { 
+        id: '10', 
+        title: 'Caso Clínico en Quirófano V',
+        description: 'Comparativa intraoperatoria que demuestra el incremento inmediato en circunferencia, volumen y definición anatómica.',
+        before: '/images/himplant-10a.jpeg', 
+        after: '/images/himplant-10b.jpeg' 
+    },
 ];
 
 export function BeforeAfterGallery() {
